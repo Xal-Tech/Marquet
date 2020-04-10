@@ -24,6 +24,8 @@ Lo que diferencia a esta propuesta de aplicaciones como Rappi, Uber Eats y Merca
 
 El siguiente gráfico proviene de una encuesta que llevamos a cabo los días 6 y 7 de abril del 2020 por medio de redes sociales a personas entre 15 y 70 años para comprobar si estarían interesadas en comprar su despensa por medio de internet. Más de dos tercios de los encuestados manifestaron interés.
 
+![Gráfico](grafica.png)
+
 ## Registro
 
 A modo de facilitar el uso para los vendedores sin amplio conocimiento digital, contemplamos un registro individual muy simple donde solo se necesite crear una cuenta con su nombre completo, un número telefónico de contacto, dirección del negocio y una foto del dueño y del establecimiento. Estos datos harán más humano el trato a la vez que darán confianza al cliente de quién le está vendiendo. De misma forma, los clientes se deberán registrar con su nombre, teléfono y domicilio para brindar seguridad al vendedor.
@@ -48,6 +50,8 @@ El transporte de los productos se llevará a cabo por personal del vendedor para
 
 El siguiente mapa muestra la zona en la que estará disponible el servicio inicialmente: la ciudad de Xalapa y asentamientos aledaños. Este territorio fue a su vez dividido en cuatro sectores designados por las letras griegas ω (Omega), β (Beta), γ (Gamma) y α (Alfa), los cuales servirán para identificar más fácilmente los factores que inciden en el proyecto.
 
+![Mapa](mapa.png)
+
 ## Métodos de pago
 
 Las transacciones se llevarán a cabo en efectivo inicialmente. El cliente le entregará el dinero al repartidor y este se lo entregará a su empleador: el vendedor. De esta manera se le da el control total del capital a éste último.
@@ -55,6 +59,8 @@ Las transacciones se llevarán a cabo en efectivo inicialmente. El cliente le en
 Con la progresiva formalización de los negocios se introducirán formas de pago electrónicas (por ejemplo: tarjetas de crédito y débito, criptomonedas y carteras virtuales).
 
 ## Estrategias a mediano plazo
+
+![Estrategias](estrategias.png)
 
 Pasada la actual contingencia, planeamos adaptar este proyecto para, no sólo reparar el daño económico, pero también aumentar el ritmo del crecimiento del país. El plan es disminuir el porcentaje de trabajos informales en la medida de lo posible y registrarlos frente al SAT, mirando a acabar permanentemente con la informalidad. Con esto, surgirían nuevas empresas capaces de generar capital nacional y se recolectará una mayor cantidad de tributos con los cuales se podrá mantener de manera más eficaz hospitales y otros servicios públicos.
 
