@@ -70,7 +70,7 @@ La OIT (2018) estableció que la tasa de informalidad en América Latina y el Ca
 
 ## Referencias
 
-Amador, J., Cervantes Arenillas, D., Rodríguez, A., Salazar, S. A., &amp; Serrano, C. (2020). Una contracción del PIB es inevitable. _BBVA Research._ https://www.bbvaresearch.com/publicaciones/mexico-recesion-inevitable-las-decisiones-que-se-tomen-determinaran-la-profundidad/
+Amador, J., Cervantes Arenillas, D., Rodríguez, A., Salazar, S. A., &amp; Serrano, C. (2020). _Una contracción del PIB es inevitable._ BBVA Research. https://www.bbvaresearch.com/publicaciones/mexico-recesion-inevitable-las-decisiones-que-se-tomen-determinaran-la-profundidad/
 
 INEGI. (2019). _Empleo y ocupación._ INEGI Datos. https://www.inegi.org.mx/temas/empleo/
 
