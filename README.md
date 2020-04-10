@@ -1,7 +1,7 @@
-## Marquet
+# Marquet
 Marquet es una plataforma virtual por la cual productores y vendedores informales(aquellos que no tienen un salario mínimo) pueden vender sus productos.
 
-# Preámbulo
+## Preámbulo
 
 En estos momentos, México está pasando por momentos muy difíciles en temas de salud y economía. La enfermedad conocida como COVID-19 ha obligado a los gobiernos alrededor del mundo a tomar medidas de aislamiento social debido a su alta tasa de contagios. Estas medidas, por necesarias que puedan ser para garantizar la salud de la población, suponen un peso adicional en las finanzas de todos, especialmente en las de aquellos sin ahorros suficientes o sin una fuente de ingresos garantizada.
 
@@ -11,7 +11,7 @@ La Organización Internacional del Trabajo ha declarado que, si la situación no
 
 Debido a lo anterior, es necesario tomar medidas para favorecer una recuperación pronta y poder garantizar la seguridad económica de la población, lo cual se logrará diversificando las relaciones económicas en México y formalizando el empleo, respectivamente.
 
-# Estrategia de acciones urgentes
+## Estrategia de acciones urgentes
 
 Estamos convencidos que con el uso de la tecnología e innovación podemos lograr este objetivo. El comercio por internet en México se ha vuelto más popular al pasar de los años pues les permite a las personas recibir y adquirir productos desde la comodidad de sus casas, y en estos momentos, realizar sus compras sin arriesgarse a un contagio.
 
@@ -24,11 +24,11 @@ Lo que diferencia a esta propuesta de aplicaciones como Rappi, Uber Eats y Merca
 
 El siguiente gráfico proviene de una encuesta que llevamos a cabo los días 6 y 7 de abril del 2020 por medio de redes sociales a personas entre 15 y 70 años para comprobar si estarían interesadas en comprar su despensa por medio de internet. Más de dos tercios de los encuestados manifestaron interés.
 
-# Registro
+## Registro
 
 A modo de facilitar el uso para los vendedores sin amplio conocimiento digital, contemplamos un registro individual muy simple donde solo se necesite crear una cuenta con su nombre completo, un número telefónico de contacto, dirección del negocio y una foto del dueño y del establecimiento. Estos datos harán más humano el trato a la vez que darán confianza al cliente de quién le está vendiendo. De misma forma, los clientes se deberán registrar con su nombre, teléfono y domicilio para brindar seguridad al vendedor.
 
-# Diseño de la página
+## Diseño de la página
 
 La página tendrá un botón por el cual el cliente o vendedor se podrán registrar para empezar la compra o venta de los productos. De igual forma, habrá un botón para poder iniciar sesión con la cuenta que crearon, usando su número de teléfono y contraseña.
 
@@ -42,19 +42,19 @@ El vendedor, por otra parte, tendrá acceso a una interfaz intuitiva en la que p
 
 De igual forma, podrá especificar los productos que tiene en venta seleccionándolos de una lista de pre-configurada. Si ofrece algo que no está incluido, tendrá la posibilidad de añadirlo manualmente.
 
-# Transporte
+## Transporte
 
 El transporte de los productos se llevará a cabo por personal del vendedor para evitar tarifas adicionales por parte de la página y brindarle confianza sobre el envío de su mercancía y el cobro. Con el uso de un sistema de calificaciones, se favorecerá la creación de un ambiente competitivo entre los vendedores.
 
 El siguiente mapa muestra la zona en la que estará disponible el servicio inicialmente: la ciudad de Xalapa y asentamientos aledaños. Este territorio fue a su vez dividido en cuatro sectores designados por las letras griegas ω (Omega), β (Beta), γ (Gamma) y α (Alfa), los cuales servirán para identificar más fácilmente los factores que inciden en el proyecto.
 
-# Métodos de pago
+## Métodos de pago
 
 Las transacciones se llevarán a cabo en efectivo inicialmente. El cliente le entregará el dinero al repartidor y este se lo entregará a su empleador: el vendedor. De esta manera se le da el control total del capital a éste último.
 
 Con la progresiva formalización de los negocios se introducirán formas de pago electrónicas (por ejemplo: tarjetas de crédito y débito, criptomonedas y carteras virtuales).
 
-# Estrategias a mediano plazo
+## Estrategias a mediano plazo
 
 Pasada la actual contingencia, planeamos adaptar este proyecto para, no sólo reparar el daño económico, pero también aumentar el ritmo del crecimiento del país. El plan es disminuir el porcentaje de trabajos informales en la medida de lo posible y registrarlos frente al SAT, mirando a acabar permanentemente con la informalidad. Con esto, surgirían nuevas empresas capaces de generar capital nacional y se recolectará una mayor cantidad de tributos con los cuales se podrá mantener de manera más eficaz hospitales y otros servicios públicos.
 
@@ -64,11 +64,11 @@ Dicho objetivo se piensa conseguir suministrando a los vendedores con informaci�
 
 Con la implementación de la aplicación y página web se espera una mejora en la calidad de los productos nacionales, ya que habrá un aumento en la competencia entre vendedores. De esta manera, habrá un consumo interno mayor por parte de las personas y, consecuentemente, se incentivará el crecimiento nacional.
 
-# Estrategias a largo plazo
+## Estrategias a largo plazo
 
 La OIT (2018) estableció que la tasa de informalidad en América Latina y el Caribe es del 53%, lo que implica cerca de 140 millones de trabajadores laboran en estas condiciones. Mediante la colaboración con ONGs y gobiernos extranjeros, se piensa exportar la idea del mercado virtual para ser implementada en otros países en vías de desarrollo en aras de combatir el susodicho problema y exterminarlo.
 
-# Referencias
+## Referencias
 
 Amador, J., Cervantes Arenillas, D., Rodríguez, A., Salazar, S. A., &amp; Serrano, C. (2020). Una contracción del PIB es inevitable. _BBVA Research._ https://www.bbvaresearch.com/publicaciones/mexico-recesion-inevitable-las-decisiones-que-se-tomen-determinaran-la-profundidad/
 
