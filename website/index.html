@@ -16,7 +16,7 @@
         </p>
 
         <p class="tienes-cuenta">
-            Ya tienes cuenta? <a href="#" id="iniciar-sesion-boton">Iniciar sesi&oacute;n</a>
+            Ya tienes cuenta? <a href="login/index.html" id="iniciar-sesion-boton">Iniciar sesi&oacute;n</a>
         </p>
 
     </div>
@@ -73,16 +73,19 @@
         <p id="crea-cuenta-subtitulo">
             Es r&aacute;pido y sencillo
         </p>
-        <input type="text" class="input-registro-texto" placeholder="Nombre Completo">
-        <br>
-        <input type="text" class="input-registro-texto" placeholder="Telefono celular">
-        <br>
-        <input type="password" class="input-registro-texto" placeholder="Contrase&ntilde;a">
-        <br>
-        <label>Aceptar <a href="#">t&eacute;rminos y condiciones</a></label>
-        <input type="checkbox" id="terminos-y-condiciones-checkbox">
-        <br>
-        <input type="submit" id="crear-cuenta-boton" value="Crear cuenta">
+
+        <form action="login/create-account.php" method="POST">
+            <input type="text" class="input-registro-texto" name="username" placeholder="Nombre Completo">
+            <br>
+            <input type="text" class="input-registro-texto" name="cellnumber" placeholder="Telefono celular">
+            <br>
+            <input type="password" class="input-registro-texto" name="password" placeholder="Contrase&ntilde;a">
+            <br>
+            <label>Aceptar <a href="#">t&eacute;rminos y condiciones</a></label>
+            <input type="checkbox" id="terminos-y-condiciones-checkbox">
+            <br>
+            <input type="submit" id="crear-cuenta-boton" value="Crear cuenta">
+        </form>
     </div>
 </body>
 
