@@ -11,11 +11,12 @@ body{
 	background-color: #f2faee;
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
+	min-width: 800px;
 }
 
 .header{
 	width: 100%;
-	background-color: #70ad47;
+	background-color: #4CAF50;
 	color: white;
 }
 
@@ -24,61 +25,79 @@ body{
 	padding: 20px;
 	font-family: Pacifico;
 	font-size:40px;
+	display: inline-block;
 }
 
 .tienes-cuenta{
-	text-align: right;
+	float: right;
 	margin: 0;
 	padding: 20px;
+	padding-top: 50px;
+	display: inline-block;
+}
+
+#iniciar-sesion-boton{
+	background-color: white;
+    margin: 10px;
+    color: #4CAF50;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 15px;
+	border: 0px;
 }
 
 .resumen{
 	width:50%;
 	float: left;
 	margin: 20px 0px 30px 70px;
-	font-size: 25px;
+	font-size: 30px;
+	display: inline-block;
 }
 
 .ventajas{
 	padding-right:30px;
 	border-spacing: 20px;
-	font-size: 18px;
+	font-size: 25px;
 }
 
 .cuenta{
-	width: 35%;
-	float:right;
+	width: 20%;
 	margin: 20px 80px 30px 0px;
+	display: inline-block;
+	float: right;
 }
 
 #crea-cuenta-titulo{
 	font-size: 30px;
 	font-weight: bold;
+	margin-bottom: 15px;
 }
 
 #crea-cuenta-subtitulo{
-	font-size: 20px;
+	font-size: 25px;
+	margin: 0px;
 }
 
 .input-registro-texto{
-	width: 300px;
+	width: 100%;
     padding: 10px;
-    margin: 10px;
-	font-size: 15px;
+    margin: 15px 0 10px 5px;
+	font-size: 16px;
 }
 
 #terminos-y-condiciones-checkbox{
-	height: 25px;
-	width: 25px;
-	vertical-align: bottom;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
 }
 
 #crear-cuenta-boton{
 	background-color: #4CAF50;
-    border: 0;
+    margin: 10px 0 0 15%;
     color: white;
-	font-size: 18px;
-    padding: 16px 32px;
+	font-size: 20px;
+    padding: 8px 16px;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 15px;
+	border: 0px;
 }
