@@ -16,7 +16,7 @@
         </a>
     </p>
     <p class="cuenta">
-        <a href="#">
+        <a href="myaccount.php">
             <img src="images/cuenta.png" height="70px" align="top">
         </a>
     </p>
