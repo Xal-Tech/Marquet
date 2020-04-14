@@ -30,6 +30,7 @@ $stmt->close();
 	<head>
 		<meta charset="utf-8">
 		<title>Profile Page</title>
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
 	<body>
