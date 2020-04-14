@@ -14,7 +14,7 @@ font-size: 70px;
     outline-color:grey;
     outline-width: 5px;
     width:700px;
-    height: 300px;
+    height: 350px;
 
 }
 
@@ -34,7 +34,7 @@ font-size: 70px;
     border: none;
     border-radius: 15px;
     margin-left: 265px;
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: #70ad47;
     color:white;
     font-size: 20px;
@@ -52,10 +52,13 @@ font-size: 70px;
 }
 #num-info{
     padding:10px;
+    margin-left: 200px;
     font-size:25px
+
 }
 #contrase-info{
     font-size: 25px;
-    margin-left: 60px;
+    margin-left: 200px;
     padding:0px
+    
 }
