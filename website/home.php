@@ -10,17 +10,27 @@ if (!isset($_SESSION['loggedin'])) {
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Home Page</title>
-	</head>
-	<body>
-        <?php include 'header.php'; ?>
-
-		<div class="content">
-			<h2>Home Page</h2>
-			<p>Welcome back, <?=$_SESSION['name']?>!</p>
+<head>
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="header">
+		<p class="titulo">
+			<img src="images/Barritas.png" height="30px" align="top" id="barritas">
+			Marquet
+			<img src="images/logo-marquet.png" height="70px" align="top">
+		</p>
+		<p class="cuenta">
+			<img src="images/cuenta.png" height="70px" align="top">
+		</p>
+    </div>
+		<div  class="buttons">
+		<input type="button" id="barra" value="Buscar producto">
+		
+		<input type="button" id="productos" value="Categorias de productos" >
 		</div>
-	</body>
+	
+</body>
 </html>
+
 
