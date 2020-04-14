@@ -6,4 +6,11 @@ CREATE TABLE IF NOT EXISTS `accounts` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
-INSERT INTO `accounts` (`id`, `username`, `password`, `cellnumber`) VALUES (1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', '1234567890');
+CREATE TABLE IF NOT EXISTS `productos` ( 
+	`id` int(11) NOT NULL , 
+	`vendedor` varchar(50) NOT NULL , 
+	`nombre-producto` varchar(50) NOT NULL , 
+	`imagen` varchar(100) NOT NULL , 
+	`precio` FLOAT NOT NULL , 
+	PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
