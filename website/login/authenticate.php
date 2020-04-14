@@ -12,19 +12,19 @@ if ( mysqli_connect_errno() ) {
 }
 
 // Checamos si de verdad mandaron la informacion de la cuenta, isset() verifica que si mandaron algo
-if ( !isset($_POST['username'], $_POST['password']) ) {
+if ( !isset($_POST['cellnumber'], $_POST['password']) ) {
     // No mandaron los datos requeridos
 	exit('Por favor llene los campos requeridos!');
 }
 
 // Preparamos el SQL
-if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
-	// Bind parameters (s = string, i = int, etc), el username es string entonces usamos "s"
-	$stmt->bind_param('s', $_POST['username']);
+if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE cellnumber = ?')) {
+	// Bind parameters (s = string, i = int, etc), el cellnumber es string entonces usamos "s"
+	$stmt->bind_param('s', $_POST['cellnumber']);
     $stmt->execute();
 	$stmt->store_result();
 
-    if ($stmt->num_rows > 0) { // Checamos si existe el username
+    if ($stmt->num_rows > 0) { // Checamos si existe el cellnumber
         $stmt->bind_result($id, $password);
         $stmt->fetch();
         // Ahora checamos la contraseña
@@ -34,14 +34,14 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
             // Se crea la sesión, son como cookies pero el servidor las recuerda
             session_regenerate_id();
             $_SESSION['loggedin'] = TRUE;
-            $_SESSION['name'] = $_POST['username'];
+            $_SESSION['name'] = $_POST['cellnumber'];
             $_SESSION['id'] = $id;
             header('Location: ../home.php');
         } else {
             echo 'Contrase&ntilde;a incorrecta!';
         }
     } else {
-        echo 'Nombre de usuario incorrecto!';
+        echo 'Telefono incorrecto!';
     }
 
 	$stmt->close();
