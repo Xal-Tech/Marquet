@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'),
+         url('fonts/pacifico-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/pacifico-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  body{
+      background-color: #f2faee;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      min-width: 800px;
+  }
+  
+  .header{
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+  }
+  
+  .titulo{
+      margin: 0px;
+      padding: 20px;
+      font-family: Pacifico;
+      font-size: 40px;
+      display: inline-block;
+  }
+  
+  .titulo a{
+      text-decoration: none;
+      color: white;
+  }
+  
+  .dropdown{
+      position: relative;
+      display: inline-block;
+      background-color: #4CAF50;
+      height: 30px;
+      padding: 20px;
+      padding-right: 0px;
+      padding-bottom: 40px;
+  }
+  
+  .menu-dropdown{
+      display: none;
+      position: absolute;
+      background-color: #f2faee;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  
+  .menu-dropdown a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  
+  .dropdown:hover .menu-dropdown {display: block;}
+  
+  .cuenta{
+      float: right;
+      padding: 20px;
+      margin: 0px;
+  }
+  
+  .barra-buscar {
+      overflow: hidden;
+      background-color: #f2faee;
+      font-size: 15px;
+  }
+  
+  .barra-buscar input[type=text] {
+      padding: 6px;
+      border: none;
+      margin: 8px 16px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      font-size: 15px;
+  }
