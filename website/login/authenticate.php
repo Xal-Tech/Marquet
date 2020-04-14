@@ -27,11 +27,11 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE cellnumber = 
     if ($stmt->num_rows > 0) { // Checamos si existe el cellnumber
         $stmt->bind_result($id, $password);
         $stmt->fetch();
-        // Ahora checamos la contraseña
+        // Ahora checamos la contrasena
         // Note: remember to use password_hash in your registration file to store the hashed passwords.
         if (password_verify($_POST['password'], $password)) {
-            // Sí coincide la contraseña
-            // Se crea la sesión, son como cookies pero el servidor las recuerda
+            // Si coincide la contrasena
+            // Se crea la sesion, son como cookies pero el servidor las recuerda
             session_regenerate_id();
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['cellnumber'];

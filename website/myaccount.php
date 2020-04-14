@@ -14,7 +14,7 @@ $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_
 if (mysqli_connect_errno()) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
-// Vamos a obtener el telefono y la contraseña de la base de datos
+// Vamos a obtener el telefono y la contrasena de la base de datos
 $stmt = $con->prepare('SELECT password, cellnumber FROM accounts WHERE id = ?');
 
 // Usamos la id de la cuenta para buscar la info
