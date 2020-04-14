@@ -19,16 +19,16 @@ if ( !isset($_POST['username'], $_POST['password'], $_POST['cellnumber']) ) {
 
 
 // Preparamos el SQL
-if ($stmt = $con->prepare('SELECT id FROM accounts WHERE username = ?')) {
-	// Bind parameters (s = string, i = int, etc), el username es string entonces usamos "s"
-	$stmt->bind_param('s', $_POST['username']);
+if ($stmt = $con->prepare('SELECT id FROM accounts WHERE cellnumber = ?')) {
+	// Bind parameters (s = string, i = int, etc), el cellnumber es string entonces usamos "s"
+	$stmt->bind_param('s', $_POST['cellnumber']);
     $stmt->execute();
     $stmt->store_result();
 
-    if ($stmt->num_rows > 0) { // Checamos si existe el username
-        echo 'El nombre de usuario ya existe';
+    if ($stmt->num_rows > 0) { // Checamos si existe el cellnumber
+        echo 'Es tel&eacute;fono ya est&aacute; usado.';
 
-    } else { // Nombre de usuario es nuevo
+    } else { // Telefono es nuevo
         // Preparamos el SQL
         if ($stmt = $con->prepare("INSERT INTO `accounts` (`username`, `password`, `cellnumber`) VALUES (?, ?, ?)")) {
             // Bind parameters (s = string, i = int, etc), son strings entonces usamos "s"
@@ -48,7 +48,7 @@ if ($stmt = $con->prepare('SELECT id FROM accounts WHERE username = ?')) {
                 // Se crea la sesión, son como cookies pero el servidor las recuerda
                 session_regenerate_id();
                 $_SESSION['loggedin'] = TRUE;
-                $_SESSION['name'] = $_POST['username'];
+                $_SESSION['name'] = $_POST['cellnumber'];
                 $_SESSION['id'] = $id;
                 header('Location: ../home.php');
 
