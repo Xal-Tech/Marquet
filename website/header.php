@@ -11,7 +11,7 @@
         </div>
     </div>
     <p class="titulo">
-        <a href="#">Marquet
+        <a href="home.php">Marquet
             <img src="images/logo-marquet.png" height="70px" align="top">
         </a>
     </p>
