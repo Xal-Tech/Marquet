@@ -12,6 +12,7 @@ if (!isset($_SESSION['loggedin'])) {
 <html>
 <head>
   <link rel="stylesheet" href="css/home.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <div class="header">
