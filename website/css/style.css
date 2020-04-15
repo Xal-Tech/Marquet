@@ -58,6 +58,11 @@
       text-decoration: none;
       display: block;
   }
+
+  .menu-dropdown a:hover{
+    background-color: grey;
+    color: white;
+  }
   
   .dropdown:hover .menu-dropdown {
       display: block;
