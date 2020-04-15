@@ -44,7 +44,7 @@ $stmt->close();
 		<div class="content">
 			
 			<div>
-				<p class="info" id="details">Your account details are below:</p>
+				<p class="info" id="details">Detalles de la cuenta:</p>
 				<table class="table">
 					
 				
