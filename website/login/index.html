@@ -8,19 +8,19 @@
     <title>Inicia sesi&oacute;n</title>
 </head>
 
-<body id="body">
-    <h1 id="login-title">Inicia sesi&oacute;n</h1>
-    <h2 id="marquet">Marquet</h2>
+<body>
     <div class="login">
-        <form action="authenticate.php" method="post">
+		<h1 id="marquet">Marquet</h2>
+		<h2 id="login-title">Inicia sesi&oacute;n</h1>
 
-            <label for="cellnumber" id="num-info">
+        <form action="authenticate.php" method="post">
+            <label for="cellnumber" class="login-label">
                 N&uacute;mero de tel&eacute;fono
             </label>
             <br>
             <input type="text" name="cellnumber" placeholder="Numero de telefono" id="cellnumber" required class="input-box">
             <br>
-            <label for="password" id="contrase-info">
+            <label for="password" class="login-label">
                 Contrase&ntilde;a
             </label>
             <br>
