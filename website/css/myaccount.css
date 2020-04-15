@@ -10,10 +10,11 @@
 }
 .info{
    font-weight: bold;
+   
 }
 
 .content{
-    margin-left: 780px ;
+    margin-left: 760px ;
     margin-top:150px;
     text-align: center;
     background-color: white;
@@ -21,7 +22,8 @@
     border-style: solid;
     outline-width: 3px;
     width: 400px;
-    height:500px
+    height:500px;
+    border-radius: 15px;
     
 
 }
