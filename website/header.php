@@ -16,6 +16,11 @@
             <img src="images/logo-marquet.png" height="70px" align="top">
         </a>
     </p>
+       <a href="shopping-cart.php"> <img src="images/shopping-cart.png"   height="70px"  id="cart-header"></a>
+
+        
+        
+        
         <div class="dropdown" style="float: right; padding-right: 50px;" align="top">
         <a href="myaccount.php"><img src="images/cuenta.png" height="70px" align="top" class="menu"></a>
             <div class="menu-dropdown" style="right: 10px;">

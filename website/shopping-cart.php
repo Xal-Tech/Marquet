@@ -12,6 +12,8 @@ if (!isset($_SESSION['loggedin'])) {
 <!DOCTYPE html>
 <html>
 <body>
+<link rel="stylesheet" href="css/style.css">
+<?php include 'header.php'; ?>
 
 
 </body>
