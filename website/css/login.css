@@ -2,80 +2,57 @@
     font-family: 'Pacifico';
     font-style: normal;
     font-weight: 400;
-    src: local('Pacifico Regular'), local('Pacifico-Regular'),
-         url('../fonts/pacifico-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/pacifico-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url('../fonts/pacifico-v16-latin-regular.woff2') format('woff2'), 
+   /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/pacifico-v16-latin-regular.woff') format('woff');
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body{
+    background-color:#f2faee;
+    min-width: 750px;
+}
+#marquet{
+    margin: 0px;
+    padding-top: 30px;
+    font-size: 70px;
+    font-family: "Pacifico";
+}
 #login-title{
-text-align: center;
-margin-top: 200px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 70px;
+    margin-top: 20px;
+    font-size: 35px;
 }
 .login{
-    margin-top: 110px;
-    margin-left: 615px;
-    margin-right: 615px;
+    height: 550px;
+    width: 600px;
+    margin: auto;
+    margin-top: 95px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     outline-style: solid;
     outline-color:grey;
-    outline-width: 5px;
-    width:700px;
-    height: 350px;
-
+    outline-width: 3px;
+    text-align: center;
 }
-
-#body{
-    background-color:#f2faee;
-    min-width: 1900px;
-
+.login-label{
+    font-size: 20px;
 }
 .input-box{
     padding: 10px;
-    margin-top: 30px;
-    margin-left: 140px;
+    font-size: 16px;
+    margin: 15px 0px 18px 0px;
 }
-
 #boton-iniciar-sesion{
-    padding:30px;
+    padding: 20px;
     cursor: pointer;
     border-radius: 10px;
-    margin-left: 265px;
     background-color: #70ad47;
     color:white;
     font-size: 20px;
-    margin-top: 30px;
+    border: 0px;
 }
-#boton-iniciar-sesion:hover {background-color: grey}
+#boton-iniciar-sesion:hover {
+    background-color: grey 
+}
 #boton-iniciar-sesion:active {
     transform: translateY(10px);
-}
-
-
-#password{
-    margin-left:140px;
-    
-}
-#num-info{
-    margin-left: 140px;
-    position: absolute;
-    margin-top: 10px;
-    font-size:25px;
-}
-
-
-#contrase-info{
-    font-size: 25px;
-    margin-left: 140px;
-    padding:0px;
-    margin-top: 10px; 
-    position: absolute;   
-}
-
-#marquet{
-text-align: center;
-font-size: 50px;
-font-family: "Pacifico";
 }

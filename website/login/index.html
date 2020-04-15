@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="../css/login.css">
-		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
-		<meta charset="utf-8">
-		<title>Inicia sesi&oacute;n</title>
-	</head>
-	<body id="body">
-		<h1 id="login-title">Inicia sesi&oacute;n</h1>
-		<h2 id="marquet">Marquet</h2>
-		<div class="login">
-			<form action="authenticate.php" method="post">	
-		
-				<label for="cellnumber" id="num-info">
-                    N&uacute;mero de tel&eacute;fono
-				</label><br>
-				<input type="text" name="cellnumber" placeholder="Numero de telefono" id="cellnumber" required class="input-box"><br>
-				<label for="password"  id="contrase-info">
-                    Contrase&ntilde;a
-				</label><br>
-				<input type="password" name="password" placeholder="Contrase&ntilde;a" id="password" required class="input-box"><br>
-				<input type="submit" value="Inicia sesi&oacute;n" id="boton-iniciar-sesion">
-			</form>
-		</div>
-	</body>
+
+<head>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="utf-8">
+    <title>Inicia sesi&oacute;n</title>
+</head>
+
+<body>
+    <div class="login">
+		<h1 id="marquet">Marquet</h2>
+		<h2 id="login-title">Inicia sesi&oacute;n</h1>
+
+        <form action="authenticate.php" method="post">
+            <label for="cellnumber" class="login-label">
+                N&uacute;mero de tel&eacute;fono
+            </label>
+            <br>
+            <input type="text" name="cellnumber" placeholder="Numero de telefono" id="cellnumber" required class="input-box">
+            <br>
+            <label for="password" class="login-label">
+                Contrase&ntilde;a
+            </label>
+            <br>
+            <input type="password" name="password" placeholder="Contrase&ntilde;a" id="password" required class="input-box">
+            <br>
+            <input type="submit" value="Inicia sesi&oacute;n" id="boton-iniciar-sesion">
+        </form>
+    </div>
+</body>
+
 </html>
