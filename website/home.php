@@ -18,6 +18,8 @@ if (!isset($_SESSION['loggedin'])) {
 <body>
 	<?php include 'header.php'; ?>
 
+	<input id="searchbar" onkeyup="buscar_producto()" type="text" name="search" placeholder="Busca un producto"> 
+
 	<table>
 		<tr>
 			<th colspan="2" class="corner">
@@ -33,10 +35,10 @@ if (!isset($_SESSION['loggedin'])) {
 				Costo
 			</th>
 		</tr>
-		<tr>
+		<tr id="list-0">
 			<td class="table-image" style='background-image: url("images/user-uploads/productos/carne-1.jpg");'>
 			</td>
-			<td>
+			<td class="nombre-producto">
 				Arrachera
 			</td>
 			<td>
@@ -51,10 +53,10 @@ if (!isset($_SESSION['loggedin'])) {
 				$143 por kilo
 			</td>
 		</tr>
-		<tr>
+		<tr id="list-1">
 			<td class="table-image" style='background-image: url("images/user-uploads/productos/tomate-1.jpg");'>
 			</td>
-			<td>
+			<td class="nombre-producto">
 				Tomate
 			</td>
 			<td>
@@ -69,10 +71,10 @@ if (!isset($_SESSION['loggedin'])) {
 				$11 por kilo
 			</td>
 		</tr>
-		<tr>
+		<tr id="list-2">
 			<td class="table-image" style='background-image: url("images/user-uploads/productos/carne-2.jpg");'>
 			</td>
-			<td>
+			<td class="nombre-producto">
 				Arrachera
 			</td>
 			<td>
@@ -87,10 +89,10 @@ if (!isset($_SESSION['loggedin'])) {
 				$151 por kilo
 			</td>
 		</tr>
-		<tr>
+		<tr id="list-3">
 			<td class="table-image" style='background-image: url("images/user-uploads/productos/tomate-2.jpg");'>
 			</td>
-			<td>
+			<td class="nombre-producto">
 				Tomate
 			</td>
 			<td>
@@ -105,10 +107,10 @@ if (!isset($_SESSION['loggedin'])) {
 				$13 por kilo
 			</td>
 		</tr>
-		<tr>
+		<tr id="list-4">
 			<td class="table-image" style='background-image: url("images/user-uploads/productos/carne-3.jpg");'>
 			</td>
-			<td>
+			<td class="nombre-producto">
 				Arrachera
 			</td>
 			<td>
@@ -123,10 +125,10 @@ if (!isset($_SESSION['loggedin'])) {
 				$148 por kilo
 			</td>
 		</tr>
-		<tr>
+		<tr id="list-5">
 			<td class="table-image" style='background-image: url("images/user-uploads/productos/tomate-3.jpg");'>
 			</td>
-			<td>
+			<td class="nombre-producto">
 				Tomate
 			</td>
 			<td>
@@ -141,10 +143,10 @@ if (!isset($_SESSION['loggedin'])) {
 				$14 por kilo
 			</td>
 		</tr>
-		<tr>
+		<tr id="list-6">
 			<td class="table-image" style='background-image: url("images/user-uploads/productos/carne-4.jpg");'>
 			</td>
-			<td>
+			<td class="nombre-producto">
 				Arrachera
 			</td>
 			<td>
@@ -159,10 +161,10 @@ if (!isset($_SESSION['loggedin'])) {
 				$144 por kilo
 			</td>
 		</tr>
-		<tr>
+		<tr id="list-7">
 			<td class="table-image" style='background-image: url("images/user-uploads/productos/tomate-4.jpg");'>
 			</td>
-			<td>
+			<td class="nombre-producto">
 				Tomate
 			</td>
 			<td>
@@ -178,6 +180,6 @@ if (!isset($_SESSION['loggedin'])) {
 			</td>
 		</tr>
 	</table>
-	
+	<script src="js/home.js"></script>
 </body>
 </html>
