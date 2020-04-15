@@ -33,30 +33,28 @@ $stmt->close();
 		<meta charset="utf-8">
 		<title>Profile Page</title>
 		
-
+		<link rel="stylesheet" href="css/myaccount.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
 	<body>
         <?php include 'header.php'; ?>
         
+		<h2 id="title">Profile Page</h2>
 		<div class="content">
-			<h2>Profile Page</h2>
+			
 			<div>
-				<p>Your account details are below:</p>
+				<p class="info" id="details">Your account details are below:</p>
 				<table>
 					
-					<tr>
-						<td>Contrase&ntilde;a:</td>
-						<td><?=$password?></td>
-					</tr>
+				
 					<tr>    
-					<td>Nombre de la cuenta</td>
+					<td class="info">Nombre de la cuenta: </td>
 					<td><?=$username?></td>
 
 					</tr>
 					<tr>
-						<td>Tel&eacute;fono:</td>
+						<td class="info">Tel&eacute;fono:</td>
 						<td><?=$cellnumber?></td>
 					</tr>
 				</table>
