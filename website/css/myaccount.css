@@ -10,6 +10,7 @@
 }
 .info{
    font-weight: bold;
+   font-size: 20px;
    
 }
 
@@ -29,4 +30,9 @@
 
 .table{
     padding: 0px 69px;
+}
+.data{
+    font-size: 20px;
+    padding-top: 1px;
+
 }

@@ -50,12 +50,12 @@ $stmt->close();
 				
 					<tr>    
 					<td class="info">Nombre de la cuenta: </td>
-					<td><?=$username?></td>
+					<td class="data"><?=$username?></td>
 
 					</tr>
 					<tr>
 						<td class="info">Tel&eacute;fono:</td>
-						<td><?=$cellnumber?></td>
+						<td class="data"><?=$cellnumber?></td>
 					</tr>
 				</table>
 			</div>
