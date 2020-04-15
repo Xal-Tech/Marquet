@@ -14,8 +14,7 @@
 }
 
 .content{
-    margin-left: 760px ;
-    margin-top:150px;
+    margin: 0 auto;
     text-align: center;
     background-color: white;
     border-color: grey;
