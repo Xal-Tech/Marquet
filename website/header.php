@@ -21,7 +21,7 @@
             <img src="images/cuenta.png" height="70px" align="top" class="menu">
             <div class="menu-dropdown" style="right: 10px;">
                 <a href="myaccount.php">Mi cuenta</a>
-                <a href="#">Mis productos</a>
+                <a href="#">Compras</a>
                 <a href="#">Ventas</a>
                 <a href="login/logout.php">Cerrar sesi&oacute;n</a>
             </div>
