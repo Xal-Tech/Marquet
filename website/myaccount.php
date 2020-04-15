@@ -40,7 +40,7 @@ $stmt->close();
 	<body>
         <?php include 'header.php'; ?>
         
-		<h2 id="title">Profile Page</h2>
+		<h2 id="title">Perfil</h2>
 		<div class="content">
 			
 			<div>
