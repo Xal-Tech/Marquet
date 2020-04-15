@@ -32,15 +32,21 @@
       text-decoration: none;
       color: white;
   }
-  
+
+  #cart-header{
+     margin-right: 20px;
+     margin-top: 10px;
+     display: inline-block;
+  }
+
+  .carro-sesion{
+    padding: 20px;
+    float: right;
+    height: 70px;
+  }
+
   .dropdown{
-      position: relative;
       display: inline-block;
-      background-color: #4CAF50;
-      height: 30px;
-      padding: 20px;
-      padding-right: 0px;
-      padding-bottom: 40px;
   }
   
   .menu-dropdown{
@@ -68,13 +74,6 @@
       display: block;
   }
   
-  
-  /* .cuenta{
-      float: right;
-      padding: 20px;
-      margin: 0px;
-  } */
-  
   .barra-buscar {
       overflow: hidden;
       background-color: #f2faee;
@@ -83,16 +82,8 @@
   
   .barra-buscar input[type=text] {
       padding: 6px;
-      border: none;
       margin: 8px 16px;
       border: 1px solid #ccc;
       border-radius: 15px;
       font-size: 15px;
-  }
-
-  #cart-header{
-    position: absolute;
-    padding-top: 18px;
-    margin-left: 1320px;
-    float: right;
   }
