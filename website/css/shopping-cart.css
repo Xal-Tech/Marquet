@@ -1,0 +1,31 @@
+#pedidos-titulo{
+    text-align: center;
+    font-size: 35px;    
+
+}
+
+#pedidos-box{
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 15px;
+    margin:auto;
+    
+}
+#hacer-pedido{
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-top: 45px;
+    margin-left: 950px;
+    border: 0px;
+    cursor: pointer;
+
+}
+#hacer-pedido:hover{
+    background-color: grey;
+}
