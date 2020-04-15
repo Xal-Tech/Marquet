@@ -10,14 +10,21 @@
             <a href="#">Mapa</a>
         </div>
     </div>
+
     <p class="titulo">
         <a href="home.php">Marquet
             <img src="images/logo-marquet.png" height="70px" align="top">
         </a>
     </p>
-    <p class="cuenta">
-        <a href="myaccount.php">
-            <img src="images/cuenta.png" height="70px" align="top">
-        </a>
-    </p>
+    <!-- <p class="cuenta"> -->
+        <div class="dropdown" style="float: right; padding-right: 50px;" align="top">
+            <img src="images/cuenta.png" height="70px" align="top" class="menu">
+            <div class="menu-dropdown" style="right: 10px;">
+                <a href="myaccount.php">Mi cuenta</a>
+                <a href="#">Mis productos</a>
+                <a href="#">Ventas</a>
+                <a href="login/logout.php">Cerrar sesi&oacute;n</a>
+            </div>
+        </div>
+    <!-- </p> -->
 </div>

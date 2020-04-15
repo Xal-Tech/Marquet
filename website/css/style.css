@@ -59,13 +59,15 @@
       display: block;
   }
   
-  .dropdown:hover .menu-dropdown {display: block;}
+  .dropdown:hover .menu-dropdown {
+      display: block;
+  }
   
-  .cuenta{
+  /* .cuenta{
       float: right;
       padding: 20px;
       margin: 0px;
-  }
+  } */
   
   .barra-buscar {
       overflow: hidden;
