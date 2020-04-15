@@ -1,29 +1,19 @@
-#barra{
-	padding:100px;
-	color:white;
-	font-size: 40px;
-	background: #70ad47;
-	margin-left: 355px;
-	cursor: pointer;
-	border-radius: 15px;
-	border: 0px;
-}
-#productos{
-	padding:100px;
-	color:white;
-	font-size: 40px;
-	background: #70ad47;
-	margin-left: 220px;
-	margin-top:0px;
-	cursor: pointer;
-	border-radius: 15px;
-	border: 0px;
-	position:absolute;
-	
-	
+table {
+	margin: 50px auto;
+	border-collapse: collapse;
+	text-align: center;
 }
 
-.buttons{
-	margin-top:200px;
-	
+th, td {
+	padding: 15px;
+	border: 3px solid #1c5c1f;
+	border-collapse: collapse;
+}
+
+.table-image {
+	width: 100px;
+    height: 100px;
+    background-size: cover; /* estas tres lineas son para poner la imagen, no las cambien */
+    background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
