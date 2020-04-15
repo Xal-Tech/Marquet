@@ -11,6 +11,7 @@ if (!isset($_SESSION['loggedin'])) {
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
@@ -18,7 +19,10 @@ if (!isset($_SESSION['loggedin'])) {
 <body>
 	<?php include 'header.php'; ?>
 
-	<input id="searchbar" onkeyup="buscar_producto()" type="text" name="search" placeholder="Busca un producto"> 
+	<div class="searchbar">
+		<input id="search-input" onkeyup="buscar_producto()" type="text" name="search" placeholder="Busca un producto"> 
+		<button type="submit"><i class="fa fa-search"></i></button>
+	</div>
 
 	<table>
 		<tr>
@@ -72,10 +76,10 @@ if (!isset($_SESSION['loggedin'])) {
 			</td>
 		</tr>
 		<tr id="list-2">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/carne-2.jpg");'>
+			<td class="table-image" style='background-image: url("images/user-uploads/productos/aceite-nutrioli-1.jpeg");'>
 			</td>
 			<td class="nombre-producto">
-				Arrachera
+				Aceite Nutrioli
 			</td>
 			<td>
 				Carlos  Subias
@@ -90,10 +94,10 @@ if (!isset($_SESSION['loggedin'])) {
 			</td>
 		</tr>
 		<tr id="list-3">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/tomate-2.jpg");'>
+			<td class="table-image" style='background-image: url("images/user-uploads/productos/concha-blanca-1.jpg");'>
 			</td>
 			<td class="nombre-producto">
-				Tomate
+				Concha
 			</td>
 			<td>
 				Maria Blanca Nieves
@@ -104,7 +108,7 @@ if (!isset($_SESSION['loggedin'])) {
 				4/5
 			</td>
 			<td>
-				$13 por kilo
+				$13
 			</td>
 		</tr>
 		<tr id="list-4">
@@ -144,10 +148,10 @@ if (!isset($_SESSION['loggedin'])) {
 			</td>
 		</tr>
 		<tr id="list-6">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/carne-4.jpg");'>
+			<td class="table-image" style='background-image: url("images/user-uploads/productos/aceite-nutrioli-2.jpeg");'>
 			</td>
 			<td class="nombre-producto">
-				Arrachera
+				Aceite de soya
 			</td>
 			<td>
 				Juan Santolaya
@@ -162,10 +166,10 @@ if (!isset($_SESSION['loggedin'])) {
 			</td>
 		</tr>
 		<tr id="list-7">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/tomate-4.jpg");'>
+			<td class="table-image" style='background-image: url("images/user-uploads/productos/concha-blanca-2.jpeg");'>
 			</td>
 			<td class="nombre-producto">
-				Tomate
+				Concha blanca
 			</td>
 			<td>
 				Suri Alberdi

@@ -1,6 +1,6 @@
 function buscar_producto() {
-    let input = document.getElementById('searchbar').value
-    input=input.toLowerCase();
+    let input = document.getElementById('search-input').value
+    input = input.toLowerCase();
     let x = document.getElementsByClassName('nombre-producto');
 
     for (i = 0; i < x.length; i++) {
