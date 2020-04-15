@@ -5,7 +5,7 @@
             <div class="barra-buscar">
                 <input type="text" placeholder="Buscar negocio">
             </div>
-            <a href="#">Productos</a>
+            <a href="home.php">Productos</a>
             <a href="#">Vendedores</a>
             <a href="#">Mapa</a>
         </div>
