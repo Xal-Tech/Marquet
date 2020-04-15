@@ -22,7 +22,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 	<table>
 		<tr>
-			<th colspan="2">
+			<th colspan="2" class="corner">
 				Producto
 			</th>
 			<th colspan="2">
@@ -139,7 +139,7 @@ if (!isset($_SESSION['loggedin'])) {
 			<td>
 				2/5
 			</td>
-			<td>
+			<td class="corner">
 				$14 por kilo
 			</td>
 		</tr>
