@@ -7,7 +7,7 @@
             </div>
             <a href="home.php">Productos</a>
             <a href="#">Vendedores</a>
-            <a href="#">Mapa</a>
+            <a href="mapa.php">Mapa</a>
         </div>
     </div>
 
@@ -16,9 +16,8 @@
             <img src="images/logo-marquet.png" height="70px" align="top">
         </a>
     </p>
-    <!-- <p class="cuenta"> -->
         <div class="dropdown" style="float: right; padding-right: 50px;" align="top">
-            <img src="images/cuenta.png" height="70px" align="top" class="menu">
+        <a href="myaccount.php"><img src="images/cuenta.png" height="70px" align="top" class="menu"></a>
             <div class="menu-dropdown" style="right: 10px;">
                 <a href="myaccount.php">Mi cuenta</a>
                 <a href="#">Compras</a>
@@ -26,5 +25,4 @@
                 <a href="login/logout.php">Cerrar sesi&oacute;n</a>
             </div>
         </div>
-    <!-- </p> -->
 </div>
