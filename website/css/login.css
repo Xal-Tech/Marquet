@@ -40,6 +40,9 @@ body{
     padding: 10px;
     font-size: 16px;
     margin: 15px 0px 18px 0px;
+    border-radius: 15px;
+    border-style: double;
+    border-color: grey;
 }
 #boton-iniciar-sesion{
     padding: 20px;
@@ -49,6 +52,7 @@ body{
     color:white;
     font-size: 20px;
     border: 0px;
+    
 }
 #boton-iniciar-sesion:hover {
     background-color: grey 
