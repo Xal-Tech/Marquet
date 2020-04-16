@@ -38,7 +38,42 @@ if (!isset($_SESSION['loggedin'])) {
 			<th>
 				Costo
 			</th>
+			<th>
+				Comprar
+			</th>
 		</tr>
+
+<?php
+// Agarra los datos de conexion
+require 'connection-data.php';
+
+// Se conecta con la informacion de arriba
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if ( mysqli_connect_errno() ) {
+	// Por si pasa un error al conectarse
+	exit('Hubo un error al conectarse a MySQL: ' . mysqli_connect_error());
+}
+
+// Preparamos el SQL
+if ($stmt = $con->prepare('SELECT * FROM productos')) {
+    $stmt->execute();
+	$stmt->store_result();
+
+	if ($stmt->num_rows > 0) { // Checamos si existe el cellnumber
+        $stmt->bind_result($id, $foto_producto, $nombre_producto, $nombre_vendedor, $foto_perfil, $rating, $precio);
+		$stmt->fetch();
+		
+		// echo '''
+
+		// ''';
+
+    }
+
+}
+
+
+
+?>
 		<tr id="list-0">
 			<td class="table-image" style='background-image: url("images/user-uploads/productos/carne-1.jpg");'>
 			</td>
@@ -55,6 +90,9 @@ if (!isset($_SESSION['loggedin'])) {
 			</td>
 			<td>
 				$143 por kilo
+			</td>
+			<td>
+				<a href="">A&ntilde;adir a carrito
 			</td>
 		</tr>
 		<tr id="list-1">
