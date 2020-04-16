@@ -54,174 +54,41 @@ if ( mysqli_connect_errno() ) {
 	exit('Hubo un error al conectarse a MySQL: ' . mysqli_connect_error());
 }
 
-// Preparamos el SQL
-if ($stmt = $con->prepare('SELECT * FROM productos')) {
-    $stmt->execute();
-	$stmt->store_result();
+$query = 'SELECT * FROM productos';
+$result = $con->query($query);
 
-	if ($stmt->num_rows > 0) { // Checamos si existe el cellnumber
-        $stmt->bind_result($id, $foto_producto, $nombre_producto, $nombre_vendedor, $foto_perfil, $rating, $precio);
-		$stmt->fetch();
-		
-		// echo '''
-
-		// ''';
-
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+		echo '
+		<tr id="list-'. strval($row['id']) .'">
+		<td class="table-image" style="background-image: url(\'images/user-uploads/productos/'. $row['foto-producto'] .'\');">
+		</td>
+		<td class="nombre-producto">
+			'. $row['nombre-producto'] .'
+		</td>
+		<td>
+			'. $row['nombre-vendedor'] .'
+		</td>
+		<td class="table-image" style="background-image: url(\'images/user-uploads/perfil/'. $row['foto-perfil'] .'\');">
+		</td>
+		<td>
+			'. $row['rating'] .'
+		</td>
+		<td>
+			'. $row['precio'] .'
+		</td>
+		<td>
+			<a href="">A&ntilde;adir a carrito
+		</td>
+		</tr>';
     }
-
+} else {
+    echo "0 results";
 }
-
-
+$con->close();
 
 ?>
-		<tr id="list-0">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/carne-1.jpg");'>
-			</td>
-			<td class="nombre-producto">
-				Arrachera
-			</td>
-			<td>
-				Juan L&oacute;pez
-			</td>
-			<td class="table-image" style='background-image: url("images/user-uploads/perfil/demo1.jpg");'>
-			</td>
-			<td>
-				4/5
-			</td>
-			<td>
-				$143 por kilo
-			</td>
-			<td>
-				<a href="">A&ntilde;adir a carrito
-			</td>
-		</tr>
-		<tr id="list-1">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/tomate-1.jpg");'>
-			</td>
-			<td class="nombre-producto">
-				Tomate
-			</td>
-			<td>
-				Dorotea Riesco
-			</td>
-			<td class="table-image" style='background-image: url("images/user-uploads/perfil/demo2.jpg");'>
-			</td>
-			<td>
-				3/5
-			</td>
-			<td>
-				$11 por kilo
-			</td>
-		</tr>
-		<tr id="list-2">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/aceite-nutrioli-1.jpeg");'>
-			</td>
-			<td class="nombre-producto">
-				Aceite Nutrioli
-			</td>
-			<td>
-				Carlos  Subias
-			</td>
-			<td class="table-image" style='background-image: url("images/user-uploads/perfil/demo3.jpg");'>
-			</td>
-			<td>
-				5/5
-			</td>
-			<td>
-				$151 por kilo
-			</td>
-		</tr>
-		<tr id="list-3">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/concha-blanca-1.jpg");'>
-			</td>
-			<td class="nombre-producto">
-				Concha
-			</td>
-			<td>
-				Maria Blanca Nieves
-			</td>
-			<td class="table-image" style='background-image: url("images/user-uploads/perfil/demo4.jpg");'>
-			</td>
-			<td>
-				4/5
-			</td>
-			<td>
-				$13
-			</td>
-		</tr>
-		<tr id="list-4">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/carne-3.jpg");'>
-			</td>
-			<td class="nombre-producto">
-				Arrachera
-			</td>
-			<td>
-				Fernando Pedre&ntilde;o
-			</td>
-			<td class="table-image" style='background-image: url("images/user-uploads/perfil/demo5.jpg");'>
-			</td>
-			<td>
-				1/5
-			</td>
-			<td>
-				$148 por kilo
-			</td>
-		</tr>
-		<tr id="list-5">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/tomate-3.jpg");'>
-			</td>
-			<td class="nombre-producto">
-				Tomate
-			</td>
-			<td>
-				Cristina Barranco
-			</td>
-			<td class="table-image" style='background-image: url("images/user-uploads/perfil/demo6.jpg");'>
-			</td>
-			<td>
-				2/5
-			</td>
-			<td class="corner">
-				$14 por kilo
-			</td>
-		</tr>
-		<tr id="list-6">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/aceite-nutrioli-2.jpeg");'>
-			</td>
-			<td class="nombre-producto">
-				Aceite de soya
-			</td>
-			<td>
-				Juan Santolaya
-			</td>
-			<td class="table-image" style='background-image: url("images/user-uploads/perfil/demo7.jpg");'>
-			</td>
-			<td>
-				4/5
-			</td>
-			<td>
-				$144 por kilo
-			</td>
-		</tr>
-		<tr id="list-7">
-			<td class="table-image" style='background-image: url("images/user-uploads/productos/concha-blanca-2.jpeg");'>
-			</td>
-			<td class="nombre-producto">
-				Concha blanca
-			</td>
-			<td>
-				Suri Alberdi
-			</td>
-			<td class="table-image" style='background-image: url("images/user-uploads/perfil/demo8.jpg");'>
-			</td>
-			<td>
-				4/5
-			</td>
-			<td>
-				$14 por kilo
-			</td>
-		</tr>
-	</table>
 	<script src="js/home.js"></script>
 </body>
 </html>
