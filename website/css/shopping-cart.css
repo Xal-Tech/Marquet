@@ -14,30 +14,30 @@
     text-align: center;
 }
 
-#botones-productos {
-    margin: auto;
-}
+        #botones-productos {
+            margin: auto;
+        }
 
-#hacer-pedido {
-    padding: 20px;
-    background-color: #4CAF50;
-    transition-duration: .2s;
-    color: white;
-    font-size: 25px;
-    border-radius: 15px;
-    border: 0px;
-    cursor: pointer;
+        #hacer-pedido {
+            padding: 20px;
+            background-color: #4CAF50;
+            transition-duration: .2s;
+            color: white;
+            font-size: 25px;
+            border-radius: 15px;
+            border: 0px;
+            cursor: pointer;
 
-}
+        }
 
-#hacer-pedido:hover {
-    background-color: grey;
-}
+        #hacer-pedido:hover {
+            background-color: grey;
+        }
 
-#bote-basura {
-    height: 50px;
-    padding: 10px;
-}
+        #bote-basura {
+            height: 50px;
+            padding: 10px;
+        }
 
 #no-productos {
     margin-top: 75px;
