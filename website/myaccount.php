@@ -15,12 +15,12 @@ if (mysqli_connect_errno()) {
     exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 // Vamos a obtener el telefono y la contrasena de la base de datos
-$stmt = $con->prepare('SELECT password, cellnumber, username FROM accounts WHERE id = ?');
+$stmt = $con->prepare("SELECT `password`, `cellnumber`, `username`, `foto-perfil` FROM `accounts` WHERE `id` = ?");
 
 // Usamos la id de la cuenta para buscar la info
 $stmt->bind_param('i', $_SESSION['id']);
 $stmt->execute();
-$stmt->bind_result($password, $cellnumber, $username); // Guardamos la info en estas variables
+$stmt->bind_result($password, $cellnumber, $username, $foto_perfil); // Guardamos la info en estas variables
 $stmt->fetch();
 $stmt->close();
 ?>
@@ -45,6 +45,8 @@ $stmt->close();
 			
 			<div>
 				<p class="info" id="details">Detalles de la cuenta:</p>
+				<img src="images/user-uploads/perfil/<?=$foto_perfil?>" width="100px" height="100px">
+				<br><br>
 				<table class="table">
 					
 				
@@ -58,6 +60,14 @@ $stmt->close();
 						<td class="data"><?=$cellnumber?></td>
 					</tr>
 				</table>
+				<br><br><br>
+				<form enctype="multipart/form-data" action="profile-picture-upload.php" method="POST">
+					<label for="input-imagen">Escoge una foto de perfil nueva</label>
+					<br>
+					<input type="file" id="input-imagen" name="imagen">
+					<br>
+					<input type="submit">
+				</form>
 			</div>
 		</div>
 	</body>

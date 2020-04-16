@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <h1>
+        Publica un nuevo producto
+    </h1>
+    
+    <form enctype="multipart/form-data" action="image-upload.php" method="POST">
+
+        <label>Tipo</label>
+        <br>
+        <input type="text" name="tipo">
+        <br>
+        <label for="input-imagen">Sube una imagen de tu producto</label>
+        <br>
+        <input type="file" id="input-imagen" name="imagen">
+        <br>
+        <input type="submit">
+    </form>
+	
+</body>
+</html>
