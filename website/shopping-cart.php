@@ -28,9 +28,6 @@ if (!isset($_SESSION['loggedin'])) {
 
     <h1 id="pedidos-titulo">Tus pedidos</h1>
 
-    <input type="submit" id="hacer-pedido" value="Envia tu pedido" >
-    <br>
-
     <?php
     // Agarra los datos de conexion
     require 'connection-data.php';
@@ -62,6 +59,8 @@ if (!isset($_SESSION['loggedin'])) {
     if ($result = $con->query($query)){
         if ($result->num_rows > 0) {
             echo '
+            <input type="submit" id="hacer-pedido" value="Envia tu pedido" >
+
             <table>
                 <tr>
                     <th colspan="2" class="corner">
