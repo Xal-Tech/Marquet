@@ -30,7 +30,7 @@ if ($stmt = $con->prepare('SELECT id FROM accounts WHERE cellnumber = ?')) {
 
     } else { // Telefono es nuevo
         // Preparamos el SQL
-        $foto_perfil = '';
+        $foto_perfil = 'cuenta.png';
         $carrito = '';
         $verified = 0;
         if ($stmt = $con->prepare("INSERT INTO `accounts` (`username`, `password`, `cellnumber`, `foto-perfil`, `carrito`, `verified`) VALUES (?, ?, ?, ?, ?, ?)")) {

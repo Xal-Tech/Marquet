@@ -23,14 +23,15 @@ if (!isset($_SESSION['loggedin'])) {
         Publica un nuevo producto
     </h1>
     <div id="center-info">
-    <form action="upload-product.php" method="POST" >
-        <label for="input-nombre-producto" class="information" id="top">Nombre de tu producto</label>
+    <form enctype="multipart/form-data" action="upload-product.php" method="POST">
+        <input type="hidden" name="tipo" value="productos">
+        <label for="input-nombre-producto">Nombre de tu producto</label>
         <br>
         <input type="text" id="input-nombre-producto" name="nombre-producto" class="input-box" >
         <br>
         <label for="input-precio" class="information">Precio</label>
         <br>
-        <input type="text" id="input-precio" name="nombre-producto" class="input-box">
+        <input type="text" id="input-precio" name="precio">
         <br>
         <label for="input-imagen" class="information">Sube una imagen de tu producto</label>
         <br>
