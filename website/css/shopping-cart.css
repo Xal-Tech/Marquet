@@ -1,35 +1,67 @@
-#pedidos-titulo{
-    text-align: center;
+#pedidos-titulo {
     font-size: 35px;    
-
 }
 
-#pedidos-box{
+#pedidos-box {
     background-color: white;
-    height: 300px;
-    width: 400px;
+    min-height: 300px;
+    height: fit-content;
+    width: fit-content;
     border-style: solid;
     border-color: grey;
     border-radius: 15px;
     margin:auto;
-    
+    text-align: center;
 }
-#hacer-pedido{
+
+#hacer-pedido {
     padding: 20px;
     background-color: #4CAF50;
     transition-duration: .2s;
     color: white;
     font-size: 25px;
-    width: 220px;
-    margin-left: -110px;
     border-radius: 15px;
-      margin-top: 45px;
-    left: 50%; 
+    margin: 0px 264px;
     border: 0px;
     cursor: pointer;
-    position: relative;
 
 }
-#hacer-pedido:hover{
+
+#hacer-pedido:hover {
     background-color: grey;
+}
+
+#no-productos {
+    margin-top: 55px;
+    font-size: 25px;
+}
+
+table {
+	margin: 30px auto;
+	text-align: center;
+	border-collapse: collapse;
+	border: 2px solid #4CAF50; 
+}
+
+tr {
+	display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th, td {
+	padding: 15px;
+	border-left: 2px solid #4CAF50;
+}
+
+td {
+	border-top: 2px solid #4CAF50;
+}
+
+.table-image {
+	width: 60px;
+    height: 60px;
+    background-size: cover; /* estas tres lineas son para poner la imagen, no las cambien */
+    background-repeat: no-repeat;
+	background-position: 50% 50%;
 }

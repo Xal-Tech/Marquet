@@ -83,3 +83,9 @@ table tr:first-child th:first-child {
 table tr:last-child td:first-child {
 	border-bottom-left-radius: 20px;
 }
+
+.anadir-a-carrito{
+	cursor:pointer;
+	color:blue;
+	text-decoration:underline;
+}

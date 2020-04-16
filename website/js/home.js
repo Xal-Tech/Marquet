@@ -14,3 +14,22 @@ function buscar_producto() {
         }
     }
 }
+
+
+$(".anadir-a-carrito").click(function(){
+    var clickedBtnID = $(this).parent().attr('id');
+    clickedBtnID = clickedBtnID.substring(5);
+    $.post("add-to-cart.php",
+    {
+      id: clickedBtnID
+    },
+    function(data, status){
+        if(status = 'success'){
+            alert("Producto añadido al carrito.");
+            console.log(data)
+        } else{
+            alert("Error al añadir producto al carrito.");
+        }
+    });
+  });
+
