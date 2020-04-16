@@ -38,6 +38,9 @@ if (!isset($_SESSION['loggedin'])) {
 				Rating
 			</th>
 			<th>
+				Verificaci&oacute;n
+			</th>
+			<th>
 				Costo
 			</th>
 			<th>
@@ -62,28 +65,59 @@ $result = $con->query($query);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-		echo '
-		<tr id="list-'. strval($row['id']) .'">
-		<td class="table-image" style="background-image: url(\'images/user-uploads/productos/'. $row['foto-producto'] .'\');">
-		</td>
-		<td class="nombre-producto">
-			'. $row['nombre-producto'] .'
-		</td>
-		<td>
-			'. $row['nombre-vendedor'] .'
-		</td>
-		<td class="table-image" style="background-image: url(\'images/user-uploads/perfil/'. $row['foto-perfil'] .'\');">
-		</td>
-		<td>
-			'. $row['rating'] .'
-		</td>
-		<td>
-			'. $row['precio'] .'
-		</td>
-		<td class="anadir-a-carrito">
-			A&ntilde;adir a carrito
-		</td>
-		</tr>';
+		if($row['verified']) {
+			echo '
+			<tr id="list-'. strval($row['id']) .'">
+			<td class="table-image" style="background-image: url(\'images/user-uploads/productos/'. $row['foto-producto'] .'\');">
+			</td>
+			<td class="nombre-producto">
+				'. $row['nombre-producto'] .'
+			</td>
+			<td>
+				'. $row['nombre-vendedor'] .'
+			</td>
+			<td class="table-image" style="background-image: url(\'images/user-uploads/perfil/'. $row['foto-perfil'] .'\');">
+			</td>
+			<td>
+				'. $row['rating'] .'
+			</td>
+			<td>
+				<img src="images/verified.png" width="30px">
+			</td>
+			<td>
+				'. $row['precio'] .'
+			</td>
+			<td class="anadir-a-carrito">
+				A&ntilde;adir a carrito
+			</td>
+			</tr>';
+		} else {
+			echo '
+			<tr id="list-'. strval($row['id']) .'">
+			<td class="table-image" style="background-image: url(\'images/user-uploads/productos/'. $row['foto-producto'] .'\');">
+			</td>
+			<td class="nombre-producto">
+				'. $row['nombre-producto'] .'
+			</td>
+			<td>
+				'. $row['nombre-vendedor'] .'
+			</td>
+			<td class="table-image" style="background-image: url(\'images/user-uploads/perfil/'. $row['foto-perfil'] .'\');">
+			</td>
+			<td>
+				'. $row['rating'] .'
+			</td>
+			<td>
+				<img src="images/non.png" width="30px">
+			</td>
+			<td>
+				'. $row['precio'] .'
+			</td>
+			<td class="anadir-a-carrito">
+				A&ntilde;adir a carrito
+			</td>
+			</tr>';
+	}
     }
 } else {
     echo "0 results";
