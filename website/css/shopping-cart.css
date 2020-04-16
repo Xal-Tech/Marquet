@@ -25,11 +25,9 @@
     border-radius: 15px;
       margin-top: 45px;
     left: 50%; 
-    /* margin-right: 50%;  */
     border: 0px;
     cursor: pointer;
     position: relative;
-    /* justify-content: center; */
 
 }
 #hacer-pedido:hover{
