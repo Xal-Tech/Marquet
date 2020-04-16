@@ -15,6 +15,7 @@ if (!isset($_SESSION['loggedin'])) {
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/shopping-cart.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title >Tus pedidos</title>
 </head>
 <body>
@@ -59,7 +60,10 @@ if (!isset($_SESSION['loggedin'])) {
     if ($result = $con->query($query)){
         if ($result->num_rows > 0) {
             echo '
-            <input type="submit" id="hacer-pedido" value="Envia tu pedido" >
+            <div id="botones-productos">
+                <input type="submit" id="hacer-pedido" value="Envia tu pedido" >
+                <a href=""><img src="images/trashcan.png" id="bote-basura"></a>
+            </div>
 
             <table>
                 <tr>
@@ -101,7 +105,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 </div>
 
-
+<script src="js/shopping-cart.js"></script>
 
 </body>
 </html>

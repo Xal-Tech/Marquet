@@ -15,6 +15,8 @@ if (!isset($_SESSION['loggedin'])) {
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>Marquet</title>
 </head>
 <body>
 	<?php include 'header.php'; ?>
@@ -78,8 +80,8 @@ if ($result->num_rows > 0) {
 		<td>
 			'. $row['precio'] .'
 		</td>
-		<td>
-			<a href="">A&ntilde;adir a carrito
+		<td class="anadir-a-carrito">
+			A&ntilde;adir a carrito
 		</td>
 		</tr>';
     }
