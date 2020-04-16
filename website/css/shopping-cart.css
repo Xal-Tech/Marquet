@@ -17,13 +17,19 @@
 #hacer-pedido{
     padding: 20px;
     background-color: #4CAF50;
+    transition-duration: .2s;
     color: white;
     font-size: 25px;
+    width: 220px;
+    margin-left: -110px;
     border-radius: 15px;
-    margin-top: 45px;
-    margin-left: 950px;
+      margin-top: 45px;
+    left: 50%; 
+    /* margin-right: 50%;  */
     border: 0px;
     cursor: pointer;
+    position: relative;
+    /* justify-content: center; */
 
 }
 #hacer-pedido:hover{

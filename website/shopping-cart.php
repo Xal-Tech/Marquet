@@ -26,7 +26,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 </div>
 
-<input type="submit" id="hacer-pedido" value="Envia tu pedido">
+<input type="submit" id="hacer-pedido" value="Envia tu pedido" >
 
 
 </body>
