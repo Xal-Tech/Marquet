@@ -21,7 +21,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 	<div class="searchbar">
 		<input id="search-input" onkeyup="buscar_producto()" type="text" name="search" placeholder="Busca un producto"> 
-		<button type="submit"><i class="fa fa-search"></i></button>
+		<button type="submit" style="border-radius: 15px"><i class="fa fa-search"></i></button>
 	</div>
 
 	<table>
