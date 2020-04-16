@@ -37,7 +37,11 @@
         #bote-basura {
             height: 50px;
             padding: 10px;
+            position: absolute;            
         }
+    #bote-basura:hover{
+        transform: translateY(2px);
+    }
 
 #no-productos {
     margin-top: 75px;
