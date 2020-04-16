@@ -30,9 +30,12 @@ if ($stmt = $con->prepare('SELECT id FROM accounts WHERE cellnumber = ?')) {
 
     } else { // Telefono es nuevo
         // Preparamos el SQL
-        if ($stmt = $con->prepare("INSERT INTO `accounts` (`username`, `password`, `cellnumber`) VALUES (?, ?, ?)")) {
+        $foto_perfil = '';
+        $carrito = '';
+        $verified = 0;
+        if ($stmt = $con->prepare("INSERT INTO `accounts` (`username`, `password`, `cellnumber`, `foto-perfil`, `carrito`, `verified`) VALUES (?, ?, ?, ?, ?, ?)")) {
             // Bind parameters (s = string, i = int, etc), son strings entonces usamos "s"
-            $stmt->bind_param('sss', $_POST['username'], password_hash($_POST['password'], PASSWORD_DEFAULT), $_POST['cellnumber']);
+            $stmt->bind_param('sssssi', $_POST['username'], password_hash($_POST['password'], PASSWORD_DEFAULT), $_POST['cellnumber'], $foto_perfil, $carrito, $verified);
             $stmt->execute();
 
             if ($stmt = $con->prepare('SELECT id FROM accounts WHERE username = ?')) {
@@ -59,7 +62,7 @@ if ($stmt = $con->prepare('SELECT id FROM accounts WHERE cellnumber = ?')) {
 
     }
 
-    $stmt->close();
+    // $stmt->close();
 
 }
 
