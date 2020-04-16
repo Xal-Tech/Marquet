@@ -31,7 +31,7 @@ $stmt->close();
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Profile Page</title>
+		<title>Perfil</title>
 		
 		<link rel="stylesheet" href="css/myaccount.css">
 		<link rel="stylesheet" href="css/style.css">
