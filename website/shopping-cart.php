@@ -11,9 +11,12 @@ if (!isset($_SESSION['loggedin'])) {
 
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shopping-cart.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
 <body>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/shopping-cart.css">
 <?php include 'header.php'; ?>
 
 <title >Tus pedidos</title>
