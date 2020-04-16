@@ -13,6 +13,7 @@ if (!isset($_SESSION['loggedin'])) {
 <head>
 	<link rel="stylesheet" href="css/mapa.css">
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nuevo-producto.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
@@ -21,22 +22,23 @@ if (!isset($_SESSION['loggedin'])) {
     <h1>
         Publica un nuevo producto
     </h1>
-    
-    <form action="upload-product.php" method="POST">
-        <label for="input-nombre-producto">Nombre de tu producto</label>
+    <div id="center-info">
+    <form action="upload-product.php" method="POST" >
+        <label for="input-nombre-producto" class="information" id="top">Nombre de tu producto</label>
         <br>
-        <input type="text" id="input-nombre-producto" name="nombre-producto">
+        <input type="text" id="input-nombre-producto" name="nombre-producto" class="input-box" >
         <br>
-        <label for="input-precio">Precio</label>
+        <label for="input-precio" class="information">Precio</label>
         <br>
-        <input type="text" id="input-precio" name="nombre-producto">
+        <input type="text" id="input-precio" name="nombre-producto" class="input-box">
         <br>
-        <label for="input-imagen">Sube una imagen de tu producto</label>
+        <label for="input-imagen" class="information">Sube una imagen de tu producto</label>
         <br>
-        <input type="file" id="input-imagen" name="imagen">
+        <input type="file" id="input-imagen" name="imagen" class="buttons">
         <br>
-        <input type="submit">
+        <input type="submit" id="sumit-button">
     </form>
+    </div>
 	
 </body>
 </html>
