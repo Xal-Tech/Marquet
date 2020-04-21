@@ -1,4 +1,7 @@
 <?php
+//Se supone que hice un cambio aqui
+
+
 session_start();
 // Si no esta logged in mandarlo a la pagina de login
 if (!isset($_SESSION['loggedin'])) {
