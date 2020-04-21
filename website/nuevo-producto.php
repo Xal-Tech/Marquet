@@ -31,7 +31,7 @@ if (!isset($_SESSION['loggedin'])) {
         <br>
         <label for="input-precio" class="information">Precio</label>
         <br>
-        <input type="text" id="input-precio" name="precio">
+        <input type="text" id="input-precio" name="precio" class="input-box">
         <br>
         <label for="input-imagen" class="information">Sube una imagen de tu producto</label>
         <br>

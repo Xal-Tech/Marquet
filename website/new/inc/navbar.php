@@ -24,7 +24,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark fixed-bottom d-none d-lg-block" style="height: 60px; background-color: #4CAF50;">
     <div class="navbar-nav container nav-pills nav-fill" style="padding: 0px;">
       <div class="nav-item col">
-        <a class="nav-link" href="miEmpresa.php">Mi empresa <span class="material-icons md-light btn">person</span></a>
+        <a class="nav-link" href="miEmpresa.php">Mi cuenta <span class="material-icons md-light btn">person</span></a>
       </div> 
       <div class="nav-item col">
         <a class="nav-link" href="index.php">Inicio <span class="material-icons md-light btn">home</span></a>
