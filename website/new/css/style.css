@@ -1,11 +1,14 @@
-@font-face{
-  font-family: Pacifico;
-  src: url(../../fonts/pacifico-v16-latin-regular.woff);
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+       url('../fonts/pacifico-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pacifico-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 @font-face{
-  font-family: Monserrat-med;
-  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+  font-family: "Pacifico";
+  src: url('../fonts/pacifico-v16-latin-regular.woff');
 }
 
 
@@ -97,7 +100,7 @@ footer .copyright {
 }
 
 footer .copyright span {
-  color: #0894d1;
+  color: green;
 }
 
 .card{
@@ -122,6 +125,17 @@ footer .copyright span {
     background-color: #f5e6cc;
     border-color: #564c48;
     box-shadow: 0 0 0 0.2rem rgb(169, 163, 158);
+}
+
+.btn-info{
+  background-color: #4CAF50;
+  border:0px ;
+  padding:10px;
+  width:120px;
+
+}
+.btn-info:hover{
+  background-color: grey;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
