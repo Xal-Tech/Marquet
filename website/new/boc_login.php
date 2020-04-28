@@ -9,9 +9,9 @@
 	 ?>
 </head>
 <body>
-	<?php 
+	<!-- <?php 
 		include 'inc/navbar.php';
-	 ?>
+	 ?> -->
 	<div class="jumbotron" >
 		<div class="row align-items-center">
 			<span class="col-6 float-left"><center><h1 style="font-family: Pacifico; color: white;">MARQUET</h1></center></span>
